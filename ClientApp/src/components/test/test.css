@@ -1,0 +1,32 @@
+﻿
+.table2
+.table2 tr {
+    text-align: center;
+}
+
+.table2 {
+    background-color: #5e3238 !important;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+    .table2 th {
+        align-items: center;
+        align-self: center;
+        width: inherit;
+        text-align: center;
+        border: 1px solid rgb(182, 168, 168);
+    }
+.imj {
+    width: inherit;
+}
+
+.table2 td {
+    background-color: #5e3238 !important;
+    vertical-align: central;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    width: 180px;
+}

@@ -1,0 +1,18 @@
+/*
+#AB9C9C - основной цвет текста
+#3B2024 - цвет фона
+Шрифт - Lora*/
+table
+{
+    border-spacing: 1px;
+}
+.Book
+{
+    background-color: #5e343b;
+    color: #AB9C9C;
+}
+.cc
+{
+    list-style: none;
+    text-decoration: none;
+}

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "LoraRegular";  
+    src: url("../../fonts/Lora-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+.account, wrapper1, .form-wrapper1, .email, .userinfo {
+    width: max-content;
+    height:max-content;
+}
+.Passed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 37px;
+    width: 6em;
+    font-family: "LoraRegular";
+    font-size: 48px;
+    color: #AB9C9C;
+}
+.testSection
+{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background: url(../../images/book.jpg);
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+}
+.testdiv
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testvariantiv
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(120, 120, 120, 0.7);
+  border-radius: 75px;
+}
+.ull1
+{
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-bettween;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style: none;
+  width: 315.64px;
+  height: 380.21px;
+  background: rgba(104, 67, 74, 0.9);
+  border-radius: 20px;
+}
+.buttontest
+{
+  font-family: "LoraRegular";  
+  display: block;
+  margin-top: 4vmax;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px 30px 50px;
+  width: max-content;
+  height: max-content;
+  font-size: 48px;
+  background: rgba(104, 67, 74, 0.8);
+  border-radius: 31px;
+  color: #AB9C9C;
+}

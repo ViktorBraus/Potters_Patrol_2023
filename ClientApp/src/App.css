@@ -1,0 +1,995 @@
+/*
+#AB9C9C - основной цвет текста
+#3B2024 - цвет фона
+Шрифт - Lora
+        background-color: rgba(196,196,196, 0.6); - чтобы настроить прозрачность
+*/
+
+@font-face {
+    font-family: Lora;
+    src: url("./fonts/Lora-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.textstyling {
+    color: #ab9c9cd2;
+    font-size: 60px;
+    font-family: Lora;
+    text-align: center;
+}
+
+    .textstyling > a {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #ffffff;
+        font-size: 60px;
+        font-family: Lora;
+    }
+html
+{
+    height:100%;
+}
+body {
+    border: none;
+    font-family: Lora;
+    height: inherit;
+    width: auto;
+    height: 100% !important;
+    background: #3b2024;
+    color: #AB9C9C;
+    margin: 0;
+}
+
+.spinner {
+    text-align: center;
+}
+
+a {
+    color: #d4cece;
+    text-decoration: none;
+}
+
+    a:focus,
+    a:hover {
+        color: #8d7e7e;
+    }
+/*MENU STYLING*/
+
+.facultyimage {
+    width: 65px;
+    height: 65px;
+    border-radius: 76.5px;
+    border: none;
+    background: url(./images/герб.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.menucursor {
+    padding: 6px 9px;
+    flex-grow: 1;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: url(./images/punkts.png);
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.logo {
+    position: sticky;
+    font-family: "LoraRegular";
+    width: 100%;
+    top: 0;
+    background: #3B2024;
+    font-family: Lora;
+    font-size: 55px;
+    text-align: center;
+    color: #AB9C9C;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+.nav {
+    text-decoration: none;
+    list-style: none;
+    font-size: 0;
+    float: right;
+    display: inline-flex;
+}
+
+.list {
+    flex-grow: 1;
+}
+
+.tiiitle_ {
+    padding: 6px 9px;
+    flex-grow: 1;
+}
+
+.tiiitle {
+    padding-left: 260px;
+    flex-grow: 3;
+    text-align: center;
+}
+
+button:hover, NavLink:hover,  {
+    transition: 0.3s linear;
+    background-color: #1a1a1f;
+    color: #ffffff;
+}
+
+.but {
+    transition: 0.2s linear;
+    font-family: "LoraRegular";
+    min-width: 100%;
+    cursor: pointer;
+    border: none;
+    background: rgba(227, 227, 227, 0.2);
+    border-radius: 10px;
+    color: #fefefe;
+}
+
+.labell {
+    width: 300px;
+    font-size: 34px;
+    background-color: #a19898;
+    color: rgb(219, 219, 219);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profileinformation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav li a {
+    transition: 0.2s linear;
+    display: block;
+    /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+    padding: 6px 9px;
+    bottom:0;
+    /* Внутри блочные отступы. */
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.AdminButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 76.5px;
+    border: none;
+    background: url(./images/AdminButton.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.SearchButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 76.5px;
+    border: none;
+    background: url(./images/икон.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.ProfileButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 76.5px;
+    border: none;
+    background: url(./images/дары.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.AboutButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 76.5px;
+    border: none;
+    background: url(./images/молния.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.HomeButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 76.5px;
+    border: none;
+    background: url(./images/хогвартс.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.LoginButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 76.5px;
+    border: none;
+    background: url(./images/дары.png);
+    background-position: center;
+    background-size: contain;
+}
+
+
+/*FOOTER STYLING*/
+footer {
+    background: #291619;
+    display: block;
+    height: 100%;
+    margin-bottom:0px;
+}
+
+
+/*MAIN(HOME) PAGE STYLING*/
+
+.at_hog {
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.at_hog1 {
+    background: rgba(82, 33, 42, 0.61);
+    border-radius: 20px;
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.HomePage {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    background: url(./images/background_image.png);
+    background-position: center;
+    background-size: cover;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 82px;
+    text-align: center;
+    color: #AB9C9C;
+    text-shadow: 0px 4px 51px rgba(0, 0, 0, 0.25);
+}
+
+    .HomePage p{
+        height: max-content;
+        font-weight: bold;
+        background-image: linear-gradient(180deg, white 0%, #AB9C9C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 82px;
+        text-align: center;
+    }
+
+    .HomePage button {
+        transition: 0.2s linear;
+        width: 304px;
+        height: max-content;
+        margin-bottom: 20px;
+        background: rgba(90, 79, 81, 0.61);
+        border-radius: 20px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 82px;
+        text-align: center;
+        color: #AB9C9C;
+    }
+
+button:hover {
+    border-color: #81565c;
+}
+
+.texting {
+    font-size: 15px;
+}
+
+
+/*REGISTRY STYLING*/
+
+.registrybackground {
+    background: url(./images/RegistryBackground.png);
+    background-position: center;
+    background-size: contain;
+}
+
+
+p,
+div {
+    font-family: Lora;
+}
+
+.info {
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 0.5em;
+    color: #DAD9D9;
+    font-weight: lighter;
+}
+
+input, textarea {
+    font-family: "LoraRegular";
+    font-size: 20px;
+    max-width: 700px;
+    padding: 10px 10px;
+    background: rgba(227, 227, 227, 0.2);
+    border-radius: 10px;
+    color: #DAD9D9;
+}
+
+.input::placeholder {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #bbb;
+}
+
+.fl {
+    font-size: 20px;
+}
+
+.but {
+    transition: 0.2s linear;
+    font-family: "LoraRegular";
+    min-width: 100%;
+    cursor: pointer;
+    margin-right: 0.25em;
+    margin-top: 0.5em;
+    padding: 0.938em;
+    border: none;
+    background: rgba(227, 227, 227, 0.2);
+    border-radius: 10px;
+    color: #fefefe;
+}
+
+.error {
+    color: #db2269;
+    font-size: 0.8em;
+    display: relative;
+}
+
+.fullName,
+.email,
+.password,
+.repeatpassword {
+    font-family: "LoraRegular";
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.email,
+.password,
+.repeatpassword {
+    width: 100%;
+}
+
+.fullName {
+    width: 100%;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login {
+    background: url(./images/RegistryBackground.png);
+    background-position: center;
+    background-size: contain;
+}
+
+
+/*FORM STYLING*/
+
+.wrapper {
+    text-decoration: none;
+    height: 97vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "LoraRegular";
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    max-width: 80%;
+    min-width: 100px;
+    min-height: auto;
+    padding: 20px 40px;
+    box-shadow: 0px 8px 36px #222;
+    background: rgba(123, 123, 123, 0.3);
+    border-radius: 66px;
+}
+
+    .form-wrapper > h2 {
+        display: flex;
+        justify-content: center;
+        font-family: "LoraRegular";
+        font-size: 2em;
+        font-weight: lighter;
+        margin-top: 0.25em;
+        color: #DAD9D9;
+    }
+
+/*form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+@media screen and (max-width: 1200px) {
+    .menucursor ~ label {
+        transition: 0.3s linear;
+        width: 35px;
+        height: 35px;
+        float: left;
+        text-align:center;
+        margin: 25px 20px 0px 0px;
+        border: none;
+        background: url(./images/punkts.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menucursor:hover ~ label {
+        opacity: 0.5;
+        width: 35px;
+        height: 35px;
+        float: left;
+        margin-top: 25px;
+        padding-top: 5px;
+        border: none;
+        background: url(./images/punkts.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menucursor:checked ~ label {
+        opacity: 0.3;
+        width: 35px;
+        height: 35px;
+        float: left;
+        margin-top: 25px;
+        padding-top: 5px;
+        border: none;
+        background: url(./images/punkts.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menucursor:checked ~ .logo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .settingsbutton {
+        width: 35px;
+        height: 35px;
+        margin: 6px 9px 0px 0px;
+        background: url(./images/punkts.png);
+    }
+
+    .tiiitle, .facultyimage {
+        background-color: unset;
+    }
+
+    .logo {
+        position: unset;
+        background: none !important;
+    }
+
+        .logo > div > ul {
+            display: none;
+        }
+
+    .logo {
+        background-color: #3B2024;
+    }
+
+    .menucursor:checked ~ div > ul {
+        position: sticky !important;
+        padding: 0 0 0 0;
+        align-self: stretch;
+        border-radius: 40px;
+        background-color: none;
+        height: 100%;
+        padding-top: 0px;
+        display: inline-flex !important;
+        flex-direction: column !important;
+    }
+
+    li {
+        padding: 0 0 0 0 !important;
+        padding-top: 10px;
+    }
+}
+
+
+/*PROFILE PAGE*/
+
+.Profile {
+    width: 100%;
+    height: 100%;
+    background: url(./images/profilebackground1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.userinfo {
+    color: #ffffff;
+    font-size: initial;
+}
+
+.butaa {
+    width: 300px;
+    background-color: #a19898;
+    color: rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+    .butaa:hover {
+        width: 300px;
+        background-color: #5a5353;
+        color: rgb(219, 219, 219);
+        border-radius: 10px;
+    }
+
+.Wand, .NameOfFaculty, .Patronus, .EditPhoto {
+    width: 300px;
+    height: 300px;
+}
+
+.EditPhoto {
+    background-position: center;
+    background-size: cover;
+}
+
+.NameOfFaculty {
+
+    background: url(./images/герб.png);
+    background-position: center;
+    background-size: cover;
+}
+.Gryf {
+    width: 300px;
+    height: 300px;
+    background: url(./images/Гриффиндор.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Sliz {
+    width: 300px;
+    height: 300px;
+    background: url(./images/Слизерин.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Patr {
+    width: 300px;
+    height: 300px;
+    background: url(./images/феникс.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Huff {
+    width: 300px;
+    height: 300px;
+    background: url(./images/Пуффендуй.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Rav {
+    width: 300px;
+    height: 300px;
+    background: url(./images/Когтевран.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Patronus {
+    color: black;
+    background: url(./images/patronus.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.W {
+    width: 300px;
+    height: 300px;
+    color: black;
+    background: url(./images/Пихта.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Wand {
+    color: black;
+    background: url(./images/wand.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.EditPhoto,
+.imgpre {
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.wrapper1 {
+    width: max-content !important;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "LoraRegular";
+}
+
+
+/*FORM STYLING*/
+
+.form-wrapper1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: max-content !important;
+    min-width: 100px;
+    min-height: auto;
+    padding: 20px 40px;
+    background: #3f3a3a;
+    border-radius: 20px;
+}
+
+.buta {
+    width: max-content !important;
+    margin-left: 1px;
+    background: rgba(227, 227, 227, 0.2);
+    border-radius: 10px;
+    color: #AB9C9C;
+    font-size: 30px;
+}
+
+.invalid-feedback {
+    text-align: left;
+    color: red;
+}
+
+hr {
+    color: #3B2024;
+}
+
+.table {
+    color: rgb(182, 168, 168);
+    border-collapse: collapse !important;
+    text-align: center;
+}
+
+.table1
+.table1 tr {
+    text-align: center;
+}
+
+.table1 {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+    .table1 th {
+        width: inherit;
+        text-align: center;
+        border: 1px solid rgb(182, 168, 168);
+    }
+
+.imj {
+    width: 200px;
+}
+
+.table1 td {
+    vertical-align: central;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    width: 180px;
+}
+
+.table
+.table td,
+.table th {
+    border: 1px solid rgb(182, 168, 168);
+    background-color: #5e3238 !important;
+    border-collapse: collapse !important;
+}
+
+.table td {
+    border: 1px solid rgb(182, 168, 168);
+    background-color: #5e3238 !important;
+    border-collapse: collapse !important;
+    text-align: center !important;
+}
+
+.table th {
+    text-align: center;
+}
+
+.tablecontent {
+    background-color: #5e3238 !important;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(182, 168, 168);
+}
+
+h3 {
+    font-size: 25px;
+    color: rgb(182, 168, 168);
+}
+
+.ul, .vv > a {
+    transition: 0.2 linear;
+    background-color: #5e3238 !important;
+    list-style: none;
+    text-decoration: none;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.linn {
+    font-size: 30px !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+
+.formchange {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentButton {
+    width: auto;
+    background-color: #a19898;
+    color: rgb(59, 40, 40);
+    border-radius: 10px;
+}
+
+    .contentButton:hover {
+        width: auto;
+        background-color: #2b2727;
+        color: rgb(219, 219, 219);
+        border-radius: 10px;
+    }
+.form {
+    margin: 0 auto;
+    width: max-content;
+    padding: 1em;
+    position: static;
+    background-color: #743e46;
+    border-radius: 20px;
+    justify-content: center;
+}
+.lol{
+    margin: 0 auto;
+    align-content:center;
+    align-items: center;
+    text-align:center;
+    background-image: url('images/bottles.jpg');
+    background-size: cover;
+}
+.zol {
+    argin: 0 auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lola
+{
+    font-size: 20px !important;
+}
+.lolik {
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+}
+.lolikk {
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.testblock {
+    align-content: center;
+    color: #AB9C9C;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #74484e;
+    border: 3px solid #3d2225;
+    border-radius: 5px;
+}
+.radio input {
+    align-content:center;
+    position: absolute;
+    opacity: 0;
+}
+
+.radio__text {
+    align-content: center;
+    margin-top: 10px;
+    width: 250px;
+    position: relative;
+    padding: 0 0 0px 35px;
+    cursor: pointer;
+}
+
+    .radio__text:before {
+        align-content: center !important;
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #CDD1DA;
+        border-radius: 50%;
+        background: rgb(194, 194, 194);
+    }
+
+    .radio__text:after {
+        align-content: center;
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 4px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #532a42;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+        opacity: 0;
+        transition: .2s;
+    }
+
+.radio input:checked + .radio__text:after {
+    opacity: 1;
+}
+
+.radio input:focus + .radio__text:before {
+    box-shadow: 0 0 0 3px rgba(197, 85, 182, 0.7);
+}
+.jj{
+    color: white !important;
+}
+#datetime-local {
+    font-size: 25px;
+    background: rgba(120, 120, 120, 0.7);
+    color: #DAD9D9;
+}
+.tundra
+{
+    background-image: url(./images/harry_potter-25.jpg);
+    background-size:cover;
+    background-position:center;
+}
+kk {
+    width: 600px ;
+    max-width: 700px;
+    background-color: rgba(227, 227, 227, 0.2) !important;
+}
+.pop {
+    background-color: #5e3238 !important;
+}
+.xz
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:center !important;
+}
+.tt {
+    border-radius: 30px;
+    background-color: rgba(120, 120, 120, 0.6) !important;
+}
+.table2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-content:center;
+    align-items:center;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cfr {
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+    font-style: oblique;
+}
+.ulling {
+    text-align: center;
+}
+.nmnm {
+    margin: 10px 10px 10px 10px;
+    background: #3B2024;
+    border-radius:20px;
+}
+.page
+{
+    display:flex;
+    justify-content:center;
+    font-size:26px;
+}

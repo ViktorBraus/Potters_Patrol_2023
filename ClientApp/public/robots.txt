@@ -1,0 +1,41 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+        <form className='login'
+        ref={form => this.form = form}>
+         <div className='wrapper'>
+        <div className='form-wrapper'>
+          <h2>Sign in</h2>
+            <div className='email'>
+              <label htmlFor="email">Email</label>
+              <input 
+              ref={input => this.email = input}
+              type='email'
+              name='email'
+              noValidate
+              required />
+            </div>
+            <div className='password'>
+              <label htmlFor="password">Password</label>
+              <input 
+              ref={input => this.password = input}
+              type='password'
+              name='password'
+              noValidate
+              required />
+            </div>
+            <div className='submit'>
+            <label><a href="http://localhost:3000/registry">Haven`t registred? Sign up</a></label>
+            <button type='submit' className='but' disabled={sendingEmail}>
+            {sendingEmail 
+              ? <Spinner size='lg' spinning='spinning' /> 
+              : "Login"
+            }
+          </button>
+          
+    </div>
+    </div>
+    </div>
+    </form>
+    )

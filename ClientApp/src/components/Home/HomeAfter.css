@@ -1,0 +1,143 @@
+.homediv
+{
+  width: auto;
+  height: auto;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.homediv > div{
+    border-radius: 10px;
+    background: rgba(151, 151, 151, 0.274);
+    justify-content: space-around;
+}
+   .edge {
+    display: flex;
+    justify-content: space-around;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    -ms-interpolation-mode: nearest-neighbor;  /* IE */
+    image-rendering: crisp-edges; /* Стандартное свойство */
+   }
+.distribution
+{
+  width: 100%;
+  height: 100%;
+  background: url("../../images/distribution.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.imga {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    background-image: url('../../images/wand1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: central;
+    align-content: center;
+    justify-content: center;
+}
+.imga_ {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../images/wand1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imga1 {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url('../../images/patronus.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imga1_ {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/patronus.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.circle {
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.562);
+}
+.imga2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/шляпа.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imga2_ {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/шляпа.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title
+{
+  text-align: center;
+}
+.container
+{
+  width: 300px;
+  height: 300px;
+}
+.ull
+{
+  text-align: center;
+  align-items: center;
+  display: inline-flex;
+  flex-direction:column;
+  justify-content: space-bettween;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style: none;
+  width: 315.64px;
+  height: 380.21px;
+  background: rgba(104, 67, 74, 0.9);
+  border-radius: 20px;
+}
+.diff
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.HometestSection
+{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background: url(../../images/testsection.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.block {
+    border-radius:20px;
+    background: #3B2024;
+}

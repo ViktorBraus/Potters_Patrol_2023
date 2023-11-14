@@ -1,0 +1,1 @@
+select QuestionDetail.Question, Answers.Answer from QuestionDetail, Answers where Answers.QuestionId=QuestionDetail.Id and QuestionDetail.Question_Id=1
